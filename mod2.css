@@ -1,0 +1,82 @@
+body {
+ 
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+* {
+ box-sizing: border-box;
+}
+.row{
+  width:100%;
+  padding-top: 50px;
+}
+h1{
+  text-align: center;
+}
+h2{
+  border: 1px solid black;
+  float: right;
+  padding: 0px 15px;
+  margin-top: 0px;
+  margin-right: 0px
+}
+p{
+  clear: both;
+  padding-left: 10px;
+}
+.title_1{
+ text-align: center;
+  background-color: purple;
+  border: 1px solid black;
+  color: white;
+}
+.title_2{
+  text-align: center;
+  background-color: pink;
+   border: 1px solid black;  
+}
+.title_3{
+ text-align: center;
+  background-color:blue;
+   border: 1px solid black;
+   color:white;
+}
+section{
+  border: 1px solid black;
+  margin:10px;
+  background-color: lightblue;
+}
+/********** for windows**********/
+@media (min-width: 992px) {
+  .raw {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+  }
+  
+}
+/********** for tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .raw {
+   padding-top: 20px;
+     display: grid;
+     grid-template-columns: 50% 50%;
+  }
+  .menu3{
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+  
+}
+/****for mobile***/
+@media (max-width: 768px) {
+  .raw {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+  
+}
